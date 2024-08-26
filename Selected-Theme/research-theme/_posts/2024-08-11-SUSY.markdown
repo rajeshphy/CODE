@@ -1,0 +1,129 @@
+---
+title:  "Supersymmetry Quantum Mechanics"
+date:   2024-08-11 21:20:35 +0530
+categories: research
+---
+
+Started with L. Infeld, and T.E. Hull in 1951, the factorization method was used to solve the Schrödinger equation. This method was later used by Gendenshtein in 1983 to introduce the concept of shape invariance. This concept was further developed by Cooper and Freedman in 1983.
+
+---
+Some Research Papers:
+
+- [SQM - A. Khare](https://www.ias.ac.in/article/fulltext/pram/049/01/0041-0064)
+
+- [2004 - First EOP Discovery - DBT and shape-invariant potentials - D G´omez-Ullate](https://arxiv.org/pdf/quant-ph/0308062)
+
+- [2009 - Factorization - Fellow and Smith]({{ site.baseurl }}/papers/2009-Fellow-Smith.pdf)
+- [2013 - Two step Rational Extension - Ian Marquette]({{ site.baseurl }}/papers/2013-Marquette-Two-Step.pdf)
+- [2023 - REHO, isospectral and Uncertainty Principle - Rajesh Kumar]({{ site.baseurl }}/papers/2023-Rajesh-Kumar-REHO.pdf)
+- [2017 - Rational-Extension-D-Dimension-RKY]({{ site.baseurl }}/papers/2017-Rational-Extension-D-Dimension.pdf)
+
+
+
+
+
+---
+Flowchart Based on Paper: [SQM - David J. Fern´andez C.](https://arxiv.org/pdf/0910.0192)
+
+**Citation**: [susy-google-doc](https://docs.google.com/document/d/1a4g1dg2LqvxP5OmUJ6Bu4McSia8_rKj0HqwBh7VCxI4/edit?usp=sharing)
+
+
+---
+
+<div class="mermaid">
+flowchart TD;
+    A[1951 - L. Infeld, and T.E. Hull-Factorization Method];
+    B[1983 - Gendenshtein: Shape Invariance Concept];
+    C[1983 - Cooper & Freedman];
+    A-->B;B-->C;
+    
+    subgraph SB1[Showed Conncection with Factorization]
+      A1[1984 - ANDRIANOV-Darboux Transformation]
+      B1[1984 - NIETO-Witten’s SUSY]
+    end
+    C-->SB1;
+    SB1-->D[1984-Melkins Work]
+    
+    subgraph SB2[Sukumar's pushed further Mielniks factorization]
+      A2[1985 - Sukumar: 1D Problem]
+      B2[1985 - Sukumar: Scattering]
+    end
+
+    D-->SB2;
+    E[1995 - SQM -Cooper, Khare & Sukhatme];
+    SB2-->E;
+
+    E0[1998-Simple-Generation-of-Anharmonic-Potentials];
+    E-->E0;
+
+    E1[2012 - Rational extension and EOP - Yves Grandati]
+
+    F[2014 - Truncated Harmonic Oscillator - David Fernandez]
+    E0-->E1;E1-->F;
+
+
+  
+    click A "{{ site.baseurl }}/papers/1951-Infeld-Hull.pdf";
+    click B "{{ site.baseurl }}/papers/1983-Gendenshtein.pdf";
+    click C "{{ site.baseurl }}/papers/1983-Cooper-Freedman.pdf";
+
+    click A1 "{{ site.baseurl }}/papers/1984-Andrianov-Darboux.pdf";
+    click B1 "{{ site.baseurl }}/papers/1984-Nieto-Witten.pdf";
+
+    click D "{{ site.baseurl }}/papers/1984-Mielnik.pdf";
+
+    click A2 "{{ site.baseurl }}/papers/sukumar1985-1D-problem.pdf";
+    click B2 "{{ site.baseurl }}/papers/sukumar1985-scattering.pdf";
+
+    click E "{{ site.baseurl }}/papers/1995-Cooper-Khare-Sukhatme.pdf";
+    click E0 "{{ site.baseurl }}/papers/1998-Simple-Generation-of-Anharmonic-Potentials.pdf";
+    click E1 "{{ site.baseurl }}/papers/2012-Grandati-Rational-Extension.pdf";
+
+    click F "{{ site.baseurl }}/papers/2014-truncated-David-Fernandez.pdf";
+
+</div>
+
+---
+### Higher Dimensional SUSY
+Based on the paper: [1997 - Higher Dimensional SUSY - Das & Okubo]({{ site.baseurl }}/papers/1997-Das-Okobo-Higher-Dimensional.pdf)
+
+<div class="mermaid">
+flowchart TD;
+    HD1[1984 - Non-relativistic supersymmetry - Clark, Love]
+    
+    HD2[1983 - SQM - Rittenberg]
+    HD3[1984 - Factorization - Andrianov]
+    HD4[1984 - SQM in 1D, 2D & 3D - Khare & Maharana]
+    HD5[1985 - SUSY and Dirac Equation - CV Sukumar]
+
+    HD6[1992 - Galilean Supersymmetry - Leblanc and Lozano]
+
+    HD1-->HD2; HD2-->HD3; HD3-->HD4; HD4-->HD5; HD5-->HD6;
+
+
+
+    click HD1 "{{ site.baseurl }}/papers/1984-Clark-Love.pdf";
+    click HD2 "{{ site.baseurl }}/papers/1983-Rittenberg.pdf";
+    click HD3 "{{ site.baseurl }}/papers/1984-Andrianov-Darboux.pdf";
+    click HD4 "{{ site.baseurl }}/papers/1984-Khare-Maharana.pdf";
+    click HD5 "{{ site.baseurl }}/papers/1985-Sukumar-Dirac.pdf";
+    click HD6 "{{ site.baseurl }}/papers/1992-Leblanc-Lozano.pdf";
+</div>
+
+
+
+
+
+
+
+---
+
+
+
+- In the 1960s, from the study of strong interactions, many hadrons were discovered and successfully organized in multiplets of $SU(3)_f$, with "f" referring to flavor. This procedure was known as the eightfold way of Gell-Mann and Neeman. Questions arose about bigger multiplets including particles of different spins.
+
+- In a famous No-go theorem (Coleman, Mandula 1967), it was stated that the most general symmetry of the S-matrix is Poincaré × internal, which cannot mix different spins (for example), if you still require there to be interactions.
+- Golfand and Likhtman (1971) extended the Poincaré algebra to include spinor generators $ Q_\alpha $, where $ \alpha = 1, 2 $.
+- Ramond, Neveu-Schwarz, Gervais, and Sakita (1971) devised supersymmetry in 2 dimensions (from string theory).
+- Wess and Zumino (1974) wrote down supersymmetric field theories in 4 dimensions. They opened the way for many other contributions to the field. This is often seen as the actual starting point for systematic study of supersymmetry.
+- Haag, Lopuszanski, and Sohnius (1975) generalized the Coleman-Mandula theorem to show that the only non-trivial quantum field theories have a symmetry group of super Poincaré group in a direct product with internal symmetries.

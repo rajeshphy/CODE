@@ -9,12 +9,12 @@ case $action in
         read input_video
         echo "Enter the start time (format: HH:MM:SS):"
         read start_time
-        echo "Enter the end time (format: HH:MM:SS):"
-        read end_time
+        echo "Enter the duration in seconds (format: 60, 100, etc):"
+        read duration
         echo "Enter the output video file path:"
         read output_video
 
-        ffmpeg -i "./$input_video" -ss "$start_time" -to "$end_time" -c:v libx264 -c:a aac "./$output_video"
+        ffmpeg -i "./$input_video" -ss "$start_time" -t "$duration"  "./$output_video"
         echo "Video trimmed and saved to $output_video"
         ;;
     merge)

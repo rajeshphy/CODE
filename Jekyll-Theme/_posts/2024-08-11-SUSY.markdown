@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "Supersymmetry Quantum Mechanics"
+date:   2024-08-11 21:20:35 +0530
+categories: research
+---
+
+### History of Supersymmetry
+
+- In the 1960s, from the study of strong interactions, many hadrons were discovered and successfully organized in multiplets of $SU(3)_f$, with "f" referring to flavor. This procedure was known as the eightfold way of Gell-Mann and Neeman. Questions arose about bigger multiplets including particles of different spins.
+- In a famous No-go theorem (Coleman, Mandula 1967), it was stated that the most general symmetry of the S-matrix is Poincaré × internal, which cannot mix different spins (for example), if you still require there to be interactions.
+- Golfand and Likhtman (1971) extended the Poincaré algebra to include spinor generators $ Q_\alpha $, where $ \alpha = 1, 2 $.
+- Ramond, Neveu-Schwarz, Gervais, and Sakita (1971) devised supersymmetry in 2 dimensions (from string theory).
+- Wess and Zumino (1974) wrote down supersymmetric field theories in 4 dimensions. They opened the way for many other contributions to the field. This is often seen as the actual starting point for systematic study of supersymmetry.
+- Haag, Lopuszanski, and Sohnius (1975) generalized the Coleman-Mandula theorem to show that the only non-trivial quantum field theories have a symmetry group of super Poincaré group in a direct product with internal symmetries.
+
+---
+Some Research Papers:
+- [SQM - David J. Fern´andez C.](https://arxiv.org/pdf/0910.0192)
+
+- [SQM - A. Khare](https://www.ias.ac.in/article/fulltext/pram/049/01/0041-0064)
+
+
+---
+<div class="mermaid">
+flowchart TD;
+    A[1951 - L. Infeld, and T.E. Hull-Factorization Method];
+    B[1983 - Gendenshtein: Shape Invariance Concept];
+    C[1983 - Cooper & Freedman];
+    A-->B;B-->C;
+    
+    subgraph SB1[Showed Conncection with Factorization]
+      A1[1984 - ANDRIANOV-Darboux Transformation]
+      B1[1984 - NIETO-Witten’s SUSY]
+    end
+    C-->SB1;
+    SB1-->D[1984-Melkins Work]
+    
+    subgraph SB2[Sukumar's pushed further Mielniks factorization]
+      A2[1985 - Sukumar: 1D Problem]
+      B2[1985 - Sukumar: Scattering]
+    end
+
+    D-->SB2;
+    E[1988 - Cooper, Khare & Sukhatme: Supersymmetry in Quantum Mechanics];
+    SB2-->E;
+
+    
+    click A "/papers/1951-Infeld-Hull.pdf";
+    click B "/papers/1983-Gendenshtein.pdf";
+    click C "/papers/1983-Cooper-Freedman.pdf";
+
+    click A1 "/papers/1984-Andrianov-Darboux.pdf";
+    click B1 "/papers/1984-Nieto-Witten.pdf";
+
+    click D "/papers/1984-Mielnik.pdf";
+
+    click A2 "/papers/sukumar1985-1D-problem.pdf";
+    click B2 "/papers/sukumar1985-scattering.pdf";
+
+    click E "/papers/1988-Cooper-Khare-Sukhatme.pdf";
+
+</div>
+
+
+
+

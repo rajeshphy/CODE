@@ -1,0 +1,143 @@
+/* Center the Mermaid chart on the page */
+.mermaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Center with margin */
+  max-width: 100%; /* Responsive width */
+}
+
+/* Optional: Style Mermaid SVGs */
+.mermaid svg {
+  width: 100%;
+  max-width: 600px; /* Limit the maximum width of the diagram */
+  height: auto;
+}
+
+/* Optional: Add custom styles for specific diagram elements */
+.mermaid .label {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+.mermaid .node rect {
+  fill: #e0e0e0;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Code Blocks */
+pre, code {
+  background: #f4f4f4;
+  border-radius: 6px;
+  padding: 5px;
+  font-family: 'Times New Roman', Courier, monospace;
+  color: #333;
+}
+
+/* Highlighted Code Blocks */
+.highlight {
+  background: #f4f4f4;
+  color: black;
+  padding: 10px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.highlight code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background: #333;
+  color: #fff;
+}
+
+/* MathJax Specific Styles */
+.MathJax_Display {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.MathJax .merror {
+  background-color: #fee;
+  color: #c00;
+  border: 1px solid #c00;
+  padding: 1px 3px;
+}

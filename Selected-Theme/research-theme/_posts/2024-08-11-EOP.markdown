@@ -1,0 +1,42 @@
+---
+title:  "Exceptional Orthogonal polynomials"
+date:   2024-08-12 00:00:35 +0530
+categories: research
+---
+
+Started with D G´omez-Ullate in 2004, the concept of Exceptional Orthogonal Polynomials (EOP) was introduced. This concept was further developed by C Quesne in 2008 and Yves Grandati in 2012.
+
+
+---
+Flow Chart Based on paper: [2008 - EOP, Exactly solvable potentials and SUSY - C Quesne]({{ site.baseurl }}/PAPERS-ORG/EOP/quesne2008.pdf)
+
+[2004 - First EOP Discovery - DBT and shape-invariant potentials - D G´omez-Ullate](https://arxiv.org/pdf/quant-ph/0308062)
+
+---
+
+<div class="mermaid">
+flowchart TD;
+    A[2009 - An extension of Bochner’s problem- Ullate, Kamran, Milson];
+    B[2009 - An extended class of orthogonal polynomials - Ullate, Kamran, Milson];
+    B1[2008 - EOP, Exactly solvable potentials and SUSY - C Quesne]
+    
+    C[2004 - Algebraic deformations and supersymmetry - Ullate, Kamran, Milson];
+
+    D[2012 - Rational extension and EOP - Yves Grandati];
+
+    A-->B;B-->B1; B1-->C; C-->D;
+
+
+
+
+    click A "{{ site.baseurl }}/PAPERS-ORG/EOP/2009-Ullate-Kamran-Milson.pdf";
+    click B "{{ site.baseurl }}/PAPERS-ORG/EOP/2009-Extended-Class-Ullate-Kamran-Milson.pdf";
+    click B1 "{{ site.baseurl }}/PAPERS-ORG/EOP/quesne2008.pdf";
+
+    click C "{{ site.baseurl }}/PAPERS-ORG/EOP/2004-Algebraic-Deformations-Ullate-Kamran-Milson.pdf";
+
+    click D "{{ site.baseurl }}/papers/2012-Grandati-Rational-Extension.pdf";
+</div>
+
+
+
