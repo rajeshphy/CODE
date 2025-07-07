@@ -1,0 +1,43 @@
+Prepare physics notes in full markdown language .md syntax  on the topic: "<Insert Topic Name Here>" in the following format and use dollar $ for enclosing inline symbols and equations and double $$ for body equation and don't use \(\) and \[\] anywhere. The section titled “Learning Objectives” should be in a dark red. Follow this structure:
+
+**Learning Objectives**:
+- 
+- 
+- 
+
+**Key Concepts / Definitions**:
+- 
+- 
+- 
+
+**Theory and Explanation**:
+<Insert main theoretical content here. Develop theory from sketch so to make it understandable to layman. It should be self-contained.>
+
+
+**Solved Examples**:
+- **Example 1**:  
+  Problem:  
+  Solution:
+
+- **Example 2**:  
+  Problem:  
+  Solution:
+
+**Important Points / Summary**:
+- 
+- 
+- 
+
+**Practice Questions**:
+- Short Answer:
+  1. 
+  2. 
+- Numerical:
+  1. 
+  2. 
+- MCQs:
+  1. 
+  2. 
+
+- 
+- 

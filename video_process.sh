@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "What do you want to do? (trim/merge/remove_audio/remove_video/merge_audio_to_video/reduce_video_mb)"
+echo "What do you want to do? (trim/merge/crf/remove_audio/remove_video/merge_audio_to_video/reduce_video_mb)"
 read action
 
 case $action in
@@ -78,6 +78,16 @@ case $action in
         read b_rate
         ffmpeg -i "./$input_video" -b:v "$b_rate" -b:a 128k -fs "$size" "./$output_video"
         echo "Video size reduced and saved to $output_video"
+        ;;
+    crf)
+        echo "Enter the input video file path:"
+        read input_video
+        echo "Enter the output video file path:"
+        read output_video
+        echo "Enter the crf value:"
+        read crf_value
+        ffmpeg -i "./$input_video" -vcodec libx264 -crf "$crf_value" -preset superfast "./$output_video"
+        echo "Video size reduced using crf and saved to $output_video"
         ;;
     *)
         echo "Invalid option selected. Exiting."

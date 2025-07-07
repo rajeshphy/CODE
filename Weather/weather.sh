@@ -1,9 +1,9 @@
 #!/bin/bash
 cd /Users/rajeshkumar/XXX/SAVE/CODE/Weather
 # Define an array of IDs
-# Dumka, Ranchi, Deoghar, Giridih, Pakur, Sahibganj, Godda
-# ids=("42599" "42701" "13002" "13003" "99442" "99445" "99436")
-ids=("42599" "42701")
+# Dumka, Ranchi, Deoghar, Giridih, Pakur, Sahibganj, Godda, Dhanbad
+# ids=("42599" "42701" "13002" "13003" "99442" "99445" "99436" "100002")
+ids=("42599" "100002" "42701")
 
 # Download each page as a PDF
 for id in "${ids[@]}"; do
