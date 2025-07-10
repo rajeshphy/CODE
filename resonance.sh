@@ -122,7 +122,7 @@ generate_toc_pdf() {
 EOF
 
     {
-      echo "\\textcolor{blue}{\\LARGE \\textbf{Resonance – Volume $volume, Issue $issue}}"
+      echo "\\begin{center}\\textcolor{blue}{\\LARGE\\textbf{Resonance -- Volume $volume, Issue $issue}}\\end{center}"
       echo
       awk '{
         match($0, /[0-9]{1,4}-[0-9]{1,4}$/)
@@ -146,7 +146,7 @@ EOF
       --from markdown+raw_tex \
       -V mainfont="Times New Roman" \
       -V geometry:a4paper \
-      -V geometry:margin=2cm \
+      -V geometry:top=0cm,left=1cm,right=1cm,bottom=1cm \
       -H "$header_file" \
       -o "$toc_pdf"
   fi
@@ -171,14 +171,10 @@ combine_book() {
 # 🚀 Run All
 get_input "$1" "$2"
 
-run_func() {
-	check_existing_pdf
-	fetch_and_parse
-	download_cover
-	generate_pdf_links
-	download_pdfs
-}
-
-run_func
+check_existing_pdf
+fetch_and_parse
+download_cover
+generate_pdf_links
+download_pdfs
 generate_toc_pdf
 combine_book
